@@ -4,7 +4,6 @@ if (process.env.NODE_ENV !== 'production') {
 
 const express = require('express');
 const app = express();
-const dotenv = require('dotenv');
 const expressLayouts = require('express-ejs-layouts');
 const indexRouter = require('./routes/index');
 const authorRouter = require('./routes/authors');
@@ -12,7 +11,6 @@ const bodyParser = require('body-parser');
 const colors = require('colors');
 const connectDB = require('./config/db');
 
-dotenv.config({ path: './config/config.env' });
 connectDB();
 
 app.set('view engine', 'ejs');
