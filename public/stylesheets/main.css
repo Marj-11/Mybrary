@@ -38,3 +38,38 @@ body {
 .error-message {
     color: hsl(var(--color-danger-hue), 100%, 50%);
 }
+
+.color-buttons {
+    position: absolute;
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+    align-items: center;
+    margin-left: -150px;
+}
+
+#color-btn {
+    width: 50px;
+    height: 20px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border: none;
+}
+
+.blue {
+    background-color: rgb(0, 63, 199);
+}
+
+.green {
+    background-color: rgb(16, 192, 0);
+}
+
+.maroon {
+    background-color: rgb(148, 0, 0)
+}
+
+.purpule {
+    background-color: rgb(174, 0, 180);
+}
